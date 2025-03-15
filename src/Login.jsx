@@ -9,7 +9,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
-    //console.log(backendUrl);
+    console.log(backendUrl);
     const response = await fetch(`${backendUrl}/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
